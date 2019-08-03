@@ -1,8 +1,26 @@
+<script>
+  export default {
+    data() {
+      return {
+        count: 100,
+      }
+    },
+    methods: {
+      increment() {
+        this.count += 1
+      },
+      decrement() {
+        this.count -= 1
+      }
+    }
+  }
+</script>
+
 <template>
   <div>
-    <button class="button">+</button>
-    <span>0</span>
-    <button class="button">-</button>
+    <button class="button" @click="increment">+</button>
+    <span>{{ count }}</span>
+    <button class="button" @click="decrement">-</button>
   </div>
 </template>
 

@@ -1,12 +1,13 @@
 {
   "scripts": {
     "start": "webpack-dev-server --hot --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack -p"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.1.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
