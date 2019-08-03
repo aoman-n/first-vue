@@ -3,7 +3,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, 'src/index.js'),
+  entry: path.join(__dirname, 'src/main.js'),
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, '/dist'),
@@ -39,7 +39,8 @@ module.exports = {
   resolve: {
     extensions: [".vue", ".js"],
     alias: {
-        "vue$": "vue/dist/vue.esm.js"
+      "vue$": "vue/dist/vue.esm.js",
+      "@": path.join(__dirname, '/src'),
     }
   },
   plugins: [

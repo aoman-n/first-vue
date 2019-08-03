@@ -1,18 +1,3 @@
-<script>
-import Counter from './Counter';
-
-export default {
-  components: { Counter },
-}
-
-</script>
-
 <template>
-  <div>
-    <p>Hello, World!</p>
-    <counter />
-  </div>
+  <router-view />
 </template>
-
-<style scoped>
-</style>
