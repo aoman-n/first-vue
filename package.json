@@ -1,4 +1,8 @@
 {
+  "name": "first-vue",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --hot --open --mode development",
     "build": "webpack -p"
@@ -10,6 +14,7 @@
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.1.0",
     "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "vue-loader": "^15.7.1",
